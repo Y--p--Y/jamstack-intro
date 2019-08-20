@@ -1,24 +1,100 @@
-import { Head, Notes } from 'mdx-deck'
-import { theme } from './theme'
+import { themes, Head, Notes } from 'mdx-deck'
 
-export const themes = [ theme ]
+import Compare from './static/mwdj_0301.png'
+
+export const theme = themes.yellow
+
 
 <Head>
-  <title>Presentation Title</title>
+  <title>Introduction to JAMStack</title>
 </Head>
 
-# Hello
+# Introduction to JAMStack
+
+based on the book [Modern Web Development on the JAMstack](https://www.netlify.com/oreilly-jamstack/)
 
 ---
 
-## Edit this file
-
-To create your presentation
-
-<Notes>
-Create speaker notes with the Notes component
-</Notes>
+> If you tend to feel delivering great websites should be more about the craft of markup and JavaScript than server setup and administration, you’ve found your book.
 
 ---
 
-<https://github.com/jxnblk/mdx-deck>
+## JavaScript
+## API
+## Markup
+
+---
+
+## ❌ server
+
+---
+
+<img src={Compare} />
+
+---
+
+## ✅ CDN
+- cache invalidation
+
+## ✅ Git
+- webhook
+- CI/CD
+
+## ✅ API
+- microservice
+- serverless
+
+---
+
+- 😄
+- 🛡️
+- stable
+- ⚡️
+
+---
+
+## Site Generator
+
+<https://www.staticgen.com/>
+
+---
+
+## Headless CMS
+
+<https://headlesscms.org/>
+
+---
+
+### API based CMS
+
+<img src="https://www.contentful.com/developers/_assets/get-started/starter-tech-stack.51443baad4.png" />
+
+---
+
+### Git based CMS
+
+- Netlify CMS
+- Staticman
+
+---
+
+## Case Study: Smashing Magazine
+
+blog, ecommerce, membership...
+
+---
+
+- static site generator: Hugo
+- frontend framework: Preact
+- CMS: Netlify CMS
+- Microservices
+  - GoTrue
+  - GoCommerce
+  - API gateway
+  - Stripe
+  - MailChimp
+  - Lambda Function
+
+---
+
+# 👻
