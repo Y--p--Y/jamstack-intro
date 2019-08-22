@@ -17,11 +17,13 @@ based on the book [Modern Web Development on the JAMstack](https://www.netlify.c
 
 > If you tend to feel delivering great websites should be more about the craft of markup and JavaScript than server setup and administration, you’ve found your book.
 
+# 🥳🍷
+
 ---
 
 ## JavaScript
 ## API
-## Markup
+## Markup: content + template
 
 ---
 
@@ -34,11 +36,18 @@ based on the book [Modern Web Development on the JAMstack](https://www.netlify.c
 ---
 
 ## ✅ CDN
+- TTFB⚡️ 
+- stable (no SPoFs)
 - cache invalidation
 
+---
+
 ## ✅ Git
-- webhook
+- versioning
 - CI/CD
+- webhook
+
+---
 
 ## ✅ API
 - microservice
@@ -46,16 +55,19 @@ based on the book [Modern Web Development on the JAMstack](https://www.netlify.c
 
 ---
 
-- 😄
-- 🛡️
-- stable
-- ⚡️
+## ✅ Deployment
 
 ---
 
 ## Site Generator
 
 <https://www.staticgen.com/>
+
+- Gatsby
+
+- Hugo
+
+- Next.js
 
 ---
 
@@ -74,7 +86,6 @@ based on the book [Modern Web Development on the JAMstack](https://www.netlify.c
 ### Git based CMS
 
 - Netlify CMS
-- Staticman
 
 ---
 
@@ -86,8 +97,9 @@ blog, ecommerce, membership...
 
 - static site generator: Hugo
 - frontend framework: Preact
+- assets pipeline: victor-hugo
 - CMS: Netlify CMS
-- Microservices
+- API
   - GoTrue
   - GoCommerce
   - API gateway
@@ -97,4 +109,16 @@ blog, ecommerce, membership...
 
 ---
 
-# 👻
+## Case Study: our course CMS
+
+---
+
+- Lucy fills in course content in CMS
+- __staticman__ creates a merge request which modifies `courses.yml` 
+- __gitlab__ notifies Jackie of the change via __slack__
+- Jackie merges the request
+- During the deployment of some particular branch, a backend job alters course data in database
+
+---
+
+# 👻 Are you OK?
